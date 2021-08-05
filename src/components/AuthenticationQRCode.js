@@ -5,6 +5,7 @@ import { isEqual } from '@7urtle/lambda';
 import { StoreContext } from '../store/StoreContext';
 
 const AuthenticationQRCode = () => {
+    // We do need state to get ngrokURL
     const { state, actions } = useContext(StoreContext);
     const isDevelopment = isEqual('development')(process.env.NODE_ENV);
 
